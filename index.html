@@ -5,10 +5,10 @@
 <!--[if gt IE 8]> <html> <![endif]-->
 <!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
 <head>
-	<title>Happy Birthday</title>
+	<title>День рождения Аглаи</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
 	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday">
+	<meta name="description" content="С Днем Рождения, Аглая ">
 	<meta name="robots" content="index, follow" />
 	<meta name="keywords" content="Birthday, Happy">
 	<!-- Strat of Facebook Meta -->
@@ -103,6 +103,7 @@
 		</div>
 		<div class="row message">
 			<div class="col-md-12">
+
 				<p>Привет, Аглая!</p>
 				<p>Сегодняшний день может показаться самым обычным...</p>
 				<p>но моргни два раза</p>
@@ -135,6 +136,7 @@
 				<p>Я хотел бы сказать тебе ещё раз…</p>
 				<p>С днем рождения, прекрасная Аглая!</p>
 				<p>Твой друг, Рам😊</p>
+              	<p><a onclick="stopMusic()" href="https://www.canva.com/design/DAGF30laVVc/ogrZPMsFFGnh5pEHInVlAg/watch?utm_content=DAGF30laVVc&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Нажми на меня</a></p>
 			</div>
 		</div>
 		<div class="navbar navbar-fixed-bottom">
@@ -157,4 +159,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
+
+<script>
+  function stopMusic() {
+    const audioElement = document.querySelector('.song');
+    if (audioElement.paused) {
+      return;
+    }
+    audioElement.pause();
+  }
+</script>
 </html>
